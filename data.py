@@ -122,7 +122,7 @@ def load_mock_data():
             [11,12,13,14,19,20,21,22],
             p=[0.05,0.12,0.14,0.08,0.10,0.20,0.22,0.09]
         )
-        created_at = start_date + timedelta(days=day_offset, hours=hour,
+        created_at = start_date + timedelta(days=int(day_offset), hours=int(hour),
                                             minutes=random.randint(0,59))
         order_rows.append({
             "id": i,
